@@ -14,21 +14,17 @@ namespace CivittaTask.Services.Profiles
                 .ForMember(dest => dest.HolidayTypes, opt => opt.MapFrom(src => MapHolidayTypes(src.HolidayTypes)))
                 .ForMember(dest => dest.FromDate, opt => opt.MapFrom(src => src.FromDate))
                 .ForMember(dest => dest.ToDate, opt => opt.MapFrom(src => src.ToDate));
-
             CreateMap<CountryDateDTO, CountryDate>();
-
             CreateMap<Country, CountryDTO>()
                 .ForMember(dest => dest.Regions, opt => opt.MapFrom(src => MapRegionsToString(src.Regions)))
                 .ForMember(dest => dest.HolidayTypes, opt => opt.MapFrom(src => MapHolidayTypesToString(src.HolidayTypes)))
                 .ForMember(dest => dest.FromDate, opt => opt.MapFrom(src => src.FromDate))
                 .ForMember(dest => dest.ToDate, opt => opt.MapFrom(src => src.ToDate));
-
             CreateMap<CountryDate, CountryDateDTO>();
 
             CreateMap<HolidayDateDTO, HolidayDate>();
             CreateMap<HolidayNameDTO, HolidayName>();
             CreateMap<HolidayDTO, Holiday>();
-
             CreateMap<HolidayDate, HolidayDateDTO>();
             CreateMap<HolidayName, HolidayNameDTO>();
             CreateMap<Holiday, HolidayDTO>();
@@ -39,7 +35,6 @@ namespace CivittaTask.Services.Profiles
                 dest.CountryCode = (string)context.Items["CountryCode"];
                 dest.Date = (DateTime)context.Items["Date"];
             });
-
             CreateMap<Day, DayDTO>();
         }
 

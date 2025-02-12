@@ -32,5 +32,13 @@ namespace CivittaTask.Controllers
 
             return day;
         }
+
+        [HttpGet("getMaxHolidaysInRow")]
+        public async Task<int> GetMaxHolidaysInRow([FromQuery] string countryCode, [FromQuery] int year)
+        {
+            var countOfHolidays = await _holidayService.GetMaxConsecutiveHolidays(countryCode, year);
+
+            return countOfHolidays;
+        }
     }
 }

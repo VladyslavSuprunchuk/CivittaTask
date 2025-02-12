@@ -7,5 +7,7 @@ namespace CivittaTask.Services.Interfaces
         Task<Dictionary<int, List<HolidayDTO>>> GetHolidaysGroupedByMonthAsync(string countryCode, int year);
 
         Task<DayDTO> IsWorkingDayAsync(DateTime date, string countryCode);
+
+        Task<int> GetMaxConsecutiveHolidays(string countryCode, int year)ж
     }
 }
