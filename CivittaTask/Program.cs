@@ -26,7 +26,7 @@ builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddScoped<IHolidayRepository, HolidayRepository>();
 builder.Services.AddScoped<IDayRepository, DayRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddDbContext<DataContext>(context => 
+builder.Services.AddDbContext<DataContext>(context =>
                  context.UseSqlServer(builder.Configuration.GetConnectionString(DatabaseKeywords.DbNameSection)),
                  ServiceLifetime.Scoped);
 
