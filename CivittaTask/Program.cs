@@ -30,7 +30,6 @@ builder.Services.AddDbContext<DataContext>(context =>
                  context.UseSqlServer(builder.Configuration.GetConnectionString(DatabaseKeywords.DbNameSection)),
                  ServiceLifetime.Scoped);
 
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

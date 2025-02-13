@@ -1,5 +1,4 @@
 ﻿using CivittaTask.DatabaseProvider.Entities;
-using System.Threading.Tasks;
 
 namespace CivittaTask.DatabaseProvider.Interfaces
 {

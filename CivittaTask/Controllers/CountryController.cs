@@ -1,7 +1,6 @@
 ﻿using CivittaTask.Services.Interfaces;
 using CivittaTask.Shared.DTOs;
 
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CivittaTask.Controllers

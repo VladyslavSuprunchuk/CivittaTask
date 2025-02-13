@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace CivittaTask.DatabaseProvider.Entities
+﻿namespace CivittaTask.DatabaseProvider.Entities
 {
     public class CountryDate
     {
