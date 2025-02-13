@@ -8,6 +8,6 @@ namespace CivittaTask.Services.Interfaces
 
         Task<DayDTO> IsWorkingDayAsync(DateTime date, string countryCode);
 
-        Task<int> GetMaxConsecutiveHolidays(string countryCode, int year)ж
+        Task<int> GetMaxConsecutiveHolidays(string countryCode, int year);
     }
 }
